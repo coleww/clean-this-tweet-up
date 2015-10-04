@@ -1,5 +1,5 @@
 {
-  "name": "clean-tweet",
+  "name": "clean-this-tweet-up",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,21 @@
   },
   "devDependencies": {
     "tap": "^1.3.2",
-    "standard": "4.5.4"
+    "standard": "^4.5.4"
   },
   "license": "MIT",
-  "description": "clean-tweet ----------------",
-  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
+  "description": "remove all #s, usernames, and urls from a given tweet",
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coleww/clean-this-tweet-up.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coleww/clean-this-tweet-up/issues"
+  },
+  "homepage": "https://github.com/coleww/clean-this-tweet-up#readme",
+  "keywords": [
+    "twitter",
+    "tweet"
+  ]
 }
