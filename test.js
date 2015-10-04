@@ -4,5 +4,15 @@ var cleanTweet = require('./')
 
 tap.test('does the thing', function (t) {
   t.plan(1)
-  t.equal(cleanTweet('world'), 'hello world', 'does it')
+  var tweet = {
+    text: '. @colewillsea what is up #blazing one down on https://twitter.com/',
+    entities: {
+      urls: [
+        {
+          url: 'https://twitter.com/'
+        }
+      ]
+    }
+  }
+  t.equal(cleanTweet(tweet), '. what is up blazing one down on', 'does it')
 })
