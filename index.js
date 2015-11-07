@@ -10,5 +10,7 @@ module.exports = function (tweet) {
   while (m = (text.match(phoneRegex()) || text.match(emailRegex()) || text.match(addressRegex))) {
     text = text.replace(m[0], ' ')
   }
-  return text.replace(/@\w+/g, '').replace(/#/g, '').replace(/\s+/g, ' ').replace(/^\s|\s$/g, '')
+  // IF MORE THAN 2 HASHTAGS IN A ROW, REMOVE THEM ALL!
+
+  return text.replace(/@/g, '').replace(/#/g, '').replace(/\s+/g, ' ').replace(/^\s|\s$/g, '')
 }
